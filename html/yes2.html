@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div id="test">
+                <div>
+                    <h1 class="header_text" style="color: aliceblue;">День когда мы познакомились?</h1>
+                    <div class="gif_container">
+                        <img src="https://media.tenor.com/0r0WpzB8XIIAAAAi/cute-too.gif"> 
+                    </div>
+                    
+                    <input class="btn" type="text" id="answer">
+                    <button class="btn" onclick="checkAnswer()">Проверить</button>
+                    <div id="result"></div>
+                    <script>
+                        function checkAnswer() {
+                            var answer = document.getElementById('answer').value;
+                            if (answer.toLowerCase() === '28.01.2024') {
+                                document.getElementById('result').innerHTML = '<p>Умничка! Идём дальше</p> <a href="yes3.html"> <button class="btn">Нажми</button> ';
+                            } else {
+                                document.getElementById('result').innerHTML = 'Неверно -_-'; 
+                            }
+                        }
+                
+                    </script>
+                
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+</html>

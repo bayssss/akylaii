@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div id="test">
+                <div>
+
+                    <h1 class="header_text" style="color: aliceblue;">Мое любимое блюдо?</h1>
+                    <div class="gif_container"> 
+                        <img src="https://media.tenor.com/loFja1WmwwQAAAAi/so-cute.gif"> 
+                    </div>
+                    <input class="btn" type="text" id="answer">
+                    <button class="btn" onclick="checkAnswer()">Проверить</button>
+                    <div id="result"></div>
+                    <script>
+                        function checkAnswer() {
+                            var answer = document.getElementById('answer').value;
+                            if (answer.toLowerCase() === 'паста') {
+                                document.getElementById('result').innerHTML = '<p>Запомнила! Идём дальше</p> <a href="yes4.html"> <button class="btn">Нажми</button> ';
+                            } else {
+                                document.getElementById('result').innerHTML = 'Неверно -_-'; 
+                            }
+                        }
+                
+                    </script>
+                
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+</html>

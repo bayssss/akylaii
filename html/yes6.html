@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div id="test">
+                <div>
+
+                    <h1 class="header_text" style="color: aliceblue;">Сколько роз было в твоем букете?</h1>
+                    <div class="gif_container"> 
+                        <img src="https://media.tenor.com/_4kl3WUiiQUAAAAi/peach-cat.gif"> 
+                    </div>
+                    <input class="btn" type="text" id="answer">
+                    <button class="btn" onclick="checkAnswer()">Проверить</button>
+                    <div id="result"></div>
+                    <script>
+                        function checkAnswer() {
+                            var answer = document.getElementById('answer').value;
+                            if (answer.toLowerCase() === '13') {
+                                document.getElementById('result').innerHTML = '<p>вопрос что б не расслаблялась</p> <a href="yes7.html"> <button class="btn">Нажми</button> ';
+                            } else {
+                                document.getElementById('result').innerHTML = 'ахахах подумай еще'; 
+                            }
+                        }
+                
+                    </script>
+                
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+</html>

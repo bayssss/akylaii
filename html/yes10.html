@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div id="test">
+                <div>
+
+                    <h1 class="header_text" style="color: rgb(255, 255, 255);">Внесите пожалуйста 12 цифр вашей банковской карты</h1>
+                    <ol>
+                        <input class="btn" type="text" id="answer">
+                        <input class="btn" style="width: 4cm;" style="height: 0.5cm;" type="text" id="answer">
+                        <input class="btn" style="width: 2cm;" style="height: 0.5cm;" type="text" id="answer">
+                    </ol>
+                    <div class="question" style="color: rgb(0, 0, 0);" >
+                        <p style="font-size: 20px;">Выбери срок</p>
+                        <div class="answers">
+                          <label>
+                            <input type="radio" name="q1" value="a">
+                            1 месяц
+                          </label>
+                          <label>
+                            <input type="radio" name="q1" value="b">
+                            6 месяцев
+                          </label>
+                          <label>
+                            <input type="radio" name="q1" value="c">
+                            год
+                          </label>
+                          <label>
+                            <input type="radio" name="q1" value="d">
+                            навсегда
+                          </label>
+                        </div>
+                    </div>
+                    <button class="btn" onclick="checkAnswer()">Отправить</button>
+                    <div id="result"></div>
+                    <script>
+                        function checkAnswer() {
+                            var answer = document.getElementById('answer').value;
+                            if (answer.toLowerCase() === '') {
+                                document.getElementById('result').innerHTML = '<p>Отлично, сообщим и дадим обратную связь как пройдет оплата!</p> <a href="yes11.html"> <button class="btn">Далее</button> ';
+                            } else {
+                                document.getElementById('result').innerHTML = '<p>Отлично, сообщим и дадим обратную связь как пройдет оплата!</p> <a href="yes11.html"> <button class="btn">Далее</button>'; 
+                            }
+                        }
+                
+                    </script>
+                
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+</html>

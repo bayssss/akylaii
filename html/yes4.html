@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div id="test">
+                <div>
+
+                    <h1 class="header_text" style="color: aliceblue;">Любимый напиток?</h1>
+                    <div class="gif_container"> 
+                        <img src="https://media.tenor.com/jZkgxDTASKgAAAAi/tkthao219-bubududu.gif"> 
+                    </div>
+                    <input class="btn" type="text" id="answer">
+                    <button class="btn" onclick="checkAnswer()">Проверить</button>
+                    <div id="result"></div>
+                    <script>
+                        function checkAnswer() {
+                            var answer = document.getElementById('answer').value;
+                            if (answer.toLowerCase() === 'турецкий айран') {
+                                document.getElementById('result').innerHTML = '<p>yeppp! дальше</p> <a href="yes5.html"> <button class="btn">Нажми</button> ';
+                            } else {
+                                document.getElementById('result').innerHTML = 'Неверно -_-'; 
+                            }
+                        }
+                
+                    </script>
+                
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+</html>
